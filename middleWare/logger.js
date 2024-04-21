@@ -1,5 +1,10 @@
 function logger(req, res, next) {
-  console.log(req.originalUrl);
+  const dataToLog = {
+    endpoint: req.originalUrl,
+    requestMethod: req.method,
+    requestBody: req.body,
+  };
+  console.log(dataToLog);
   next();
 }
 
