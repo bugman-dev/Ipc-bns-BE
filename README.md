@@ -3,6 +3,8 @@
 ## Description
 The introduction of Bharathiya Niyam Samhita (BNS) has been a setback for Indian lawyers, who were already familiar with the current Indian Penal Code(IPC) system. This modified LLM engine is intended to solve this issue. The software can help you find BMS codes for certain IPC sections and answer questions about IPC and BNS.
 
+![BE Architecture Diagram](assets/images/diagram.png)
+
 ## Installation
 1. Clone the repository:
 ```bash
