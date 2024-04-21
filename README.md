@@ -29,6 +29,69 @@ PORT=5000
 ```
 
 ### API Endpoints
+1. `api/v1/chat`
+
+   - Method: POST
+   - Description: Receives user prompt and sends back the processed response.
+   - Request Parameters: 
+       - `token`: auth token
+   - Request Body:
+       - `prompt`: User's prompt string
+   - Response:
+       - Status: 200 OK
+       - Body:
+       ```json
+       {
+           "message":"*Processed Response*"
+       }
+       ```
+2. `api/v1/embeddings`
+    - Method: GET
+   - Description: Retrives all vector data
+   - Request Parameters: 
+       - `token`: Auth token
+   - Request Body: None
+   - Response:
+       - Status: 200 OK
+       - Body:
+       ```json
+       {
+           "data":{}
+       }
+       ```
+3. `api/v1/embeddings`
+    - Method: POST
+   - Description: Append data to existing records
+   - Request Parameters: 
+       - `token`: Auth token
+   - Request Body: None
+       - `data`: "-User's data-"
+       - `format`: "-data format (eg: txt, pdf)-"
+   - Response:
+       - Status: 200 OK
+       - Body:
+       ```json
+       {
+           "message":"Success"
+       }
+       ```
+4. `api/v1/embeddings`
+    - Method: PUT
+   - Description: Completely replace the existing records
+   - Request Parameters: 
+       - `token`: Auth token
+   - Request Body: None
+       - `data`: "-User's data-"
+       - `format`: "-data format (eg: txt, pdf)-"
+   - Response:
+       - Status: 200 OK
+       - Body:
+       ```json
+       {
+           "message":"Success"
+       }
+       ```
+
 
 
 ## Configuration
